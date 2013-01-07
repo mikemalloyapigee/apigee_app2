@@ -1,0 +1,7 @@
+# Add a user
+curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d ' {"user":{"name":"Mike Malloy","email":"mmalloy@apigee.com"}}'  http://limitless-garden-9016.herokuapp.com/users
+
+curl -H "Content-type: application/json"  -d ' {"user":{"name":"Pat Malloy","email":"mmalloypat@gmail.com"}}'  http://limitless-garden-9016.herokuapp.com/users.json
+
+# Get a user
+curl http://limitless-garden-9016.herokuapp.com/users/1.json
