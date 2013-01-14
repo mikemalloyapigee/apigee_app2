@@ -11,11 +11,10 @@
         = model_class.human_attribute_name(:name) 
       %th
         = model_class.human_attribute_name(:email) 
-      - if current_user.admin?
-        %th
-          = model_class.human_attribute_name(:admin) 
-        %th
-          = t '.actions', :default => t("helpers.actions") 
+      %th
+        = model_class.human_attribute_name(:admin) 
+      %th
+        = t '.actions', :default => t("helpers.actions") 
   %tbody
     = render @users
     
