@@ -3,8 +3,7 @@
   = f.input :email, input_html: { style: 'width: 250px'}
   = f.input :password, input_html: { style: 'width: 250px'}
   = f.input :password_confirmation, input_html: { style: 'width: 250px'}
-  - if current_user.admin?
-    = f.input :admin
+  = f.input :admin
   
   .form-actions
     = f.submit nil, :class => 'btn btn-primary' 
