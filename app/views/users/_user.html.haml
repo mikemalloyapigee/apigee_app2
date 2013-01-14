@@ -1,6 +1,11 @@
-%li
-  = link_to user.name, user
-  = user.email
-  - if current_user.admin? and !current_user?(user)
-    = link_to "update", edit_user_path(user)
-    = link_to "delete", user, method: :delete, data: { confirm: "You sure?" }
+%tr
+  %td
+    = link_to user.name, user
+  %td
+    user.email
+  %td
+    - if current_user.admin? and !current_user?(user)
+      =link_to "update", edit_user_path(user)
+  %td
+    - if current_user.admin? and !current_user?(user)
+      =link_to "delete", user, method: :delete, data: { confirm: "You sure" }

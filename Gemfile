@@ -31,6 +31,8 @@ group :assets do
 
   gem 'uglifier', '1.2.3'
   gem 'twitter-bootstrap-rails'
+  gem "therubyracer"
+  gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 end
 
 gem 'jquery-rails', '2.0.2'

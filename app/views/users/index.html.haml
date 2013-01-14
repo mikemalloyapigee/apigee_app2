@@ -2,8 +2,18 @@
 
 = will_paginate
 
-%ul
-  - @users.each do |user|
-    = render user
+%table
+  %th
+    %td
+      Name
+    %td
+      Email
+    %td
+      Update
+    %td
+      Delete
+  %tbody    
+    - @users.each do |user|
+      = render user
       
 = will_paginate
