@@ -57,3 +57,5 @@ gem 'haml'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'simple_form'
