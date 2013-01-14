@@ -1,0 +1,4 @@
+%h1
+  = link_to current_user.name, user_path(current_user)
+%span
+  = pluralize(current_user.microposts.count, "micropost")
